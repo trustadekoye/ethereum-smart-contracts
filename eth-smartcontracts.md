@@ -8,8 +8,8 @@ To better understand, let’s dissect the lifecycle of a smart contract:
 
 Writing the Code: The developer writes the smart contract using Solidity. For example, a contract to manage token transfers might look like this:
 
-` pragma solidity ^0.8.0;
 
+`
 contract SimpleToken {
     mapping(address => uint256) public balances;
 
@@ -18,7 +18,7 @@ contract SimpleToken {
         balances[msg.sender] -= amount;
         balances[to] += amount;
     }
-} `
+}`
 
 Deployment: The smart contract is compiled into bytecode and deployed to the Ethereum blockchain. Once deployed, its address (like a digital "home") is accessible to anyone.
 Interaction: Users interact with the contract by sending transactions. These interactions often involve paying gas fees to compensate Ethereum miners for processing the transaction. This ensures the network remains secure and operational.
